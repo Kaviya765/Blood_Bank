@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver Page</title>
+    <link rel="stylesheet" href="Receiver.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Receiver Page</h1>
+        <p>Here you can search for blood donors.</p>
+        <form id="searchForm">
+            <div>
+            <label for="bloodGroup">Blood Group:</label>
+            <select id="bloodGroup" name="bloodGroup" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select></div>
+            <button type="submit">Search</button>
+        </form>
+        <ul id="results"></ul>
+        <button id="backButton">Back</button>
+    </div>
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.location.href = 'home.html'; 
+        });
+    </script>
+    <script src="Receiver.js"></script>
+</body>
+</html>
