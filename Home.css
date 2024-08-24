@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://media.istockphoto.com/photos/phonendoscope-on-a-blue-background-medical-background-picture-id1314913951?b=1&k=20&m=1314913951&s=170667a&w=0&h=aICWq0ouN0VjtC3EtWIU9obdQvgXSGdFUIx_Xm6EFwU='); /* Adjust the background image as necessary */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+.home-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 300px; /* To ensure content is below the navbar */
+}
+
+.home-container h1 {
+    margin-top: 150;
+}
+
+.link-container {
+    margin-top: 20px;
+}
+
+.home-link {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #0056b3;
+}
+
+#searchForm {
+    margin-top: 20px;
+}
+
+#searchForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#searchForm button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#searchResults {
+    margin-top: 20px;
+}
+
+#resultsList {
+    list-style-type: none;
+    padding: 0;
+}
